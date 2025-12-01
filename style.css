@@ -1,189 +1,247 @@
-/* GLOBAL */
-body {
+/* ------------------------------------------------------
+   GLOBAL STYLES
+------------------------------------------------------ */
+* {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f8f7ff;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-/* NAVBAR */
+body {
+    background: #f4f1fc;
+    color: #2c2340;
+    line-height: 1.6;
+}
+
+/* ----------------- NAVBAR ----------------- */
 .navbar {
     width: 100%;
-    background: #dcd1ff;
-    padding: 12px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    z-index: 10;
-}
-
-.navbar ul {
-    list-style: none;
+    background: #3c3852;
+    padding: 15px 40px;
     display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul li {
-    margin: 0 18px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #3a2f60;
-    font-weight: 500;
-    font-size: 14.5px;
-    transition: 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #1e163f;
-}
-
-/* LAYOUT: PROFILE LEFT + CONTENT RIGHT */
-.layout {
-    display: flex;
-    max-width: 1200px;
-    margin: 120px auto 50px auto; /* space for navbar */
-    padding: 0 20px;
-}
-
-/* PROFILE CARD */
-.profile-card {
-    width: 32%;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    height: fit-content;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
-    top: 100px;
+    top: 0;
+    z-index: 50;
 }
 
-.profile-image {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
-    margin-bottom: 20px;
-}
-
-.name {
-    font-size: 1.7rem;
+.logo {
+    font-size: 22px;
     font-weight: 600;
-    color: #2d2355;
-    margin-bottom: 6px;
+    color: white;
+    text-decoration: none;
 }
 
-.tagline {
-    color: #4b3f78;
-    font-weight: 400;
-    font-size: 15px;
+.nav-links a {
+    color: #f2eaff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #c9b2ff;
+}
+
+/* CV BUTTON */
+.cv-button {
+    background: #5a4ebc;
+    padding: 9px 16px;
+    border-radius: 8px;
+    color: white !important;
+    margin-left: 25px;
+}
+.cv-button:hover {
+    background: #483fa8;
+}
+
+/* ----------------- HOMEPAGE HERO ----------------- */
+.hero-section {
+    text-align: center;
+    padding: 120px 20px 80px 20px;
+}
+
+.hero-name {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2e2059;
+}
+
+.hero-tagline {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #6a5f91;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+}
+
+.hero-btn {
+    background: #6154cb;
+    padding: 12px 26px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.hero-btn:hover {
+    background: #4d3eab;
+}
+
+/* ----------------- PAGE LAYOUT ----------------- */
+.page-container {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ----------------- SIDEBAR ----------------- */
+.sidebar {
+    width: 280px;
+    background: #f3eefc;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #d4c3ff;
+    margin-bottom: 18px;
+}
+
+.side-name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.side-role {
+    font-size: 14px;
+    color: #6a5b9a;
+    margin-bottom: 10px;
+}
+
+.side-info p {
+    font-size: 14px;
+    color: #4b3f6a;
+}
+
+.side-links a {
+    display: block;
+    margin: 10px 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: #6a44d6;
+}
+
+.side-links a:hover {
+    color: #5228a7;
+}
+
+/* ----------------- MAIN CONTENT ----------------- */
+.content {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3d2b6d;
+    margin-bottom: 25px;
+}
+
+/* ----------------- EXPERIENCE CARDS ----------------- */
+.exp-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 22px;
+    border-left: 6px solid #8d78ea;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.exp-card h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.exp-card h2 span {
+    font-weight: normal;
+    color: #6e5b97;
+}
+
+.exp-date {
+    font-size: 14px;
+    color: #6d6791;
+    margin-bottom: 10px;
+}
+
+.exp-desc {
     margin-bottom: 12px;
 }
 
-.location,
-.email {
+.exp-skills {
     font-size: 14px;
-    color: #555;
-    margin-bottom: 3px;
+    color: #725ad1;
+    font-weight: 600;
 }
 
-/* SOCIAL LINKS */
-.social-links {
+.contract-btn {
+    display: inline-block;
     margin-top: 12px;
-}
-
-.social-links a {
-    display: block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #e8e1ff;
+    color: #4b3ca8;
     text-decoration: none;
-    color: #4b3f78;
-    margin: 6px 0;
     font-size: 14px;
-    transition: 0.3s;
 }
 
-.social-links a:hover {
-    color: #2a1d52;
+.contract-btn:hover {
+    background: #d9ccff;
 }
 
-/* RIGHT SIDE CONTENT */
-.content {
-    width: 65%;
-    margin-left: 3%;
-}
-
-.section {
+/* ----------------- CONTACT PAGE ----------------- */
+.contact-card {
     background: white;
-    padding: 30px;
+    padding: 22px;
     border-radius: 14px;
-    margin-bottom: 28px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    width: 320px;
+    text-align: center;
+    border-left: 5px solid #8874e8;
 }
 
-.section h2 {
-    color: #2d2355;
-    margin-bottom: 15px;
-    font-size: 1.6rem;
-    font-weight: 600;
+.contact-card p {
+    margin-top: 6px;
 }
 
-.section p {
-    line-height: 1.6;
-    font-size: 15px;
-    color: #444;
+.contact-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
 }
 
-/* RESEARCH CARDS */
-.card {
-    background: #faf9ff;
-    padding: 20px;
-    border-radius: 12px;
-    border-left: 5px solid #b9a7ff;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-}
-
-.card h3 {
-    margin-top: 0;
-    color: #3a2f60;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.card p {
-    margin: 0;
-    font-size: 14.5px;
-}
-
-/* CONTACT SECTION */
-#contact p {
-    margin: 6px 0;
-}
-
-/* RESPONSIVE DESIGN */
-@media (max-width: 900px) {
-    .layout {
+/* ----------------- RESPONSIVE ----------------- */
+@media(max-width: 900px){
+    .page-container {
         flex-direction: column;
     }
-
-    .profile-card {
+    .sidebar {
         width: 100%;
-        position: relative;
-        top: 0;
-        margin-bottom: 20px;
     }
-
-    .content {
-        width: 100%;
-        margin-left: 0;
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
     }
 }
