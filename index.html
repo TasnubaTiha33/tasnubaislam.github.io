@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasnuba Islam</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,7 @@
         <a class="logo" href="index.html">Tasnuba Islam</a>
     </div>
     <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="publications.html">Publications</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -25,17 +24,50 @@
     </ul>
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <img src="images/Tasnuba.jpg" class="profile-pic" alt="Tasnuba Islam">
-    <h1>Tasnuba Islam</h1>
-    <h3>AI • Clinical Data • Medical Imaging Researcher</h3>
+<!-- MAIN BODY -->
+<section class="hero-row">
 
-    <div class="hero-buttons">
-        <a href="experience.html" class="btn">About</a>
-        <a href="projects.html" class="btn2">Research</a>
-        <a href="contact.html" class="btn-disabled">Contact</a>
+    <!-- LEFT SIDE CONTENT -->
+    <div class="hero-text">
+        <h1 class="hero-name">Tasnuba Islam</h1>
+        <h3 class="hero-role">AI • Clinical Data • Medical Imaging Researcher</h3>
+
+        <p class="hero-description">
+            I am a researcher focused on AI for healthcare, clinical machine learning, 
+            medical image analysis, and multimodal modeling. My background spans synthetic EHR generation 
+            (Duke University), fetal ultrasound segmentation (LightSeg), and speech-based emotion intelligence 
+            for Bangla. I aim to build interpretable and reliable AI systems that improve clinical decision-making 
+            and support real-world medical workflows.
+        </p>
+
+        <!-- Social icons -->
+        <div class="social-icons">
+            <a href="mailto:tasnubatiha12@gmail.com">📧 Email</a>
+            <a href="https://www.linkedin.com/in/tasnubaislam">🔗 LinkedIn</a>
+            <a href="https://github.com/TasnubaTiha33">💻 GitHub</a>
+            <a href="https://orcid.org/0009-0000-6160-1430">🟢 ORCID</a>
+            <a href="https://www.researchgate.net/profile/Tasnuba-Tiha">📘 ResearchGate</a>
+        </div>
+
+        <!-- METRICS -->
+        <div class="metrics-row">
+            <div class="metric-card">
+                <h2>6+</h2><p>Months Research Experience</p>
+            </div>
+            <div class="metric-card">
+                <h2>3+</h2><p>Major Research Projects</p>
+            </div>
+            <div class="metric-card">
+                <h2>1</h2><p>Accepted Abstract</p>
+            </div>
+        </div>
     </div>
+
+    <!-- RIGHT SIDE PROFILE PHOTO -->
+    <div class="hero-photo">
+        <img src="images/Tasnuba.jpg" alt="Profile Photo">
+    </div>
+
 </section>
 
 </body>
