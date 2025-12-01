@@ -227,14 +227,12 @@ a {
     margin-bottom: 40px;
 }
 
-/* CARD GRID */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 22px;
 }
 
-/* CARD */
 .contact-card {
     background: #ffffff;
     padding: 22px 18px;
@@ -247,13 +245,11 @@ a {
     align-items: center;
 }
 
-/* HOVER */
 .contact-card:hover {
     transform: translateY(-4px);
     background: #f6f0ff;
 }
 
-/* ICON IMAGES */
 .icon-img {
     width: 32px;
     height: 32px;
@@ -261,40 +257,17 @@ a {
     margin-bottom: 10px;
 }
 
-/* EMOJI FALLBACK */
 .contact-icon {
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-/* CARD TEXT */
 .contact-card p,
 .contact-card a {
     font-size: 15px;
     margin-top: 4px;
 }
 
-/* --------------------------------------------------
-   CV PAGE
--------------------------------------------------- */
-.cv-container {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.cv-download-btn {
-    background: #6154cb;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 10px;
-    font-size: 16px;
-    display: inline-block;
-    transition: 0.2s ease;
-}
-
-.cv-download-btn:hover {
-    background: #5144b4;
-}
 
 /* --------------------------------------------------
    EXPERIENCE PAGE
@@ -329,12 +302,108 @@ a {
     margin-bottom: 8px;
 }
 
+
+/* --------------------------------------------------
+   NEWS & UPDATES SECTION (NEW)
+-------------------------------------------------- */
+.news-section {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.news-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3b2f88;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.news-subtitle {
+    text-align: center;
+    color: #6d5fae;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.news-item {
+    display: flex;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e4dfff;
+}
+
+.news-date {
+    width: 70px;
+    text-align: center;
+    font-weight: 600;
+    color: #3b2f88;
+}
+
+.news-date .month {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.news-date .day {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.news-date .year {
+    font-size: 12px;
+    margin-top: -5px;
+    color: #7a6db8;
+}
+
+.news-content {
+    background: #ffffff;
+    padding: 18px 22px;
+    border-radius: 10px;
+    border-left: 5px solid #8d78ea;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    width: 100%;
+    transition: 0.2s ease;
+}
+
+.news-content:hover {
+    background: #faf7ff;
+    transform: translateY(-3px);
+}
+
+.news-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #2c2340;
+}
+
+.news-content p {
+    font-size: 14.5px;
+    color: #4b3f72;
+    line-height: 1.55;
+}
+
+.news-tag {
+    display: inline-block;
+    background: #e8e3ff;
+    color: #3b2f88;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+
 /* --------------------------------------------------
    FOOTER
 -------------------------------------------------- */
 .footer {
-    background: #3c3852;       /* matches navbar color */
-    color: #f2eaff;            /* same light text color used in navbar links */
+    background: #3c3852;
+    color: #f2eaff;
     text-align: center;
     padding: 18px 0;
     font-size: 14px;
@@ -367,5 +436,14 @@ a {
 
     .hero-section {
         padding: 40px 20px;
+    }
+
+    .news-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .news-date {
+        width: 100%;
     }
 }
