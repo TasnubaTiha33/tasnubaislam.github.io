@@ -1,28 +1,15 @@
-// AOS Animations Initialization
-AOS.init({
-    duration: 900,
-    once: true
+// Highlight active page in navigation
+const currentPage = window.location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+    }
 });
 
-// Smooth scrolling (optional)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        if (this.getAttribute("href").startsWith("#")) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute("href"))
-                .scrollIntoView({ behavior: "smooth" });
-        }
-    });
-});
-
-// Button hover animations
-const buttons = document.querySelectorAll(".hero-btn, .contract-btn");
-buttons.forEach(btn => {
-    btn.addEventListener("mouseenter", () => {
-        btn.style.transform = "scale(1.05)";
-        btn.style.transition = "0.2s";
-    });
-    btn.addEventListener("mouseleave", () => {
-        btn.style.transform = "scale(1)";
-    });
+// Smooth hover scaling on hero links
+document.querySelectorAll(".hero-link").forEach(btn => {
+    btn.addEventListener("mouseenter", () => btn.style.transform = "scale(1.03)");
+    btn.addEventListener("mouseleave", () => btn.style.transform = "scale(1)");
 });
