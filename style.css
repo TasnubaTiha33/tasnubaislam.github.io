@@ -330,6 +330,23 @@ a {
 }
 
 /* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+.footer {
+    background: #3c3852;       /* matches navbar color */
+    color: #f2eaff;            /* same light text color used in navbar links */
+    text-align: center;
+    padding: 18px 0;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer p {
+    opacity: 0.9;
+}
+
+
+/* --------------------------------------------------
    RESPONSIVE
 -------------------------------------------------- */
 @media(max-width: 900px){
