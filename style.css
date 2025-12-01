@@ -11,7 +11,7 @@ body {
     font-family: "Inter", sans-serif;
     background: #f4f1fc;
     color: #2c2340;
-    line-height: 1.6; /* FIX: global readability */
+    line-height: 1.6;
 }
 
 a {
@@ -58,7 +58,7 @@ a {
 -------------------------------------------------- */
 .page-wrapper {
     max-width: 900px;
-    margin: 60px auto; /* FIX: prevents text sticking to hero */
+    margin: 60px auto;
     padding: 0 20px;
 }
 
@@ -76,7 +76,7 @@ a {
 }
 
 /* --------------------------------------------------
-   HERO SECTION (HOME PAGE)
+   HERO SECTION
 -------------------------------------------------- */
 .hero-section {
     padding: 80px 40px;
@@ -88,7 +88,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px; /* FIX: Prevents text/image collisions */
+    gap: 40px;
 }
 
 .hero-text {
@@ -252,6 +252,15 @@ a {
     font-size: 15px;
 }
 
+/* Image icons */
+.icon-img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+/* Emoji icons (for location) */
 .contact-icon {
     font-size: 26px;
     margin-bottom: 10px;
