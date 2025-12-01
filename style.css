@@ -19,6 +19,21 @@ a {
     color: inherit;
 }
 
+/* Make footer stick to bottom on short pages */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
 /* --------------------------------------------------
    NAVBAR
 -------------------------------------------------- */
