@@ -11,6 +11,7 @@ body {
     font-family: "Inter", sans-serif;
     background: #f4f1fc;
     color: #2c2340;
+    line-height: 1.6; /* FIX: global readability */
 }
 
 a {
@@ -53,11 +54,11 @@ a {
 }
 
 /* --------------------------------------------------
-   PAGE WRAPPER (used for subpages)
+   PAGE WRAPPER
 -------------------------------------------------- */
 .page-wrapper {
     max-width: 900px;
-    margin: 50px auto;
+    margin: 60px auto; /* FIX: prevents text sticking to hero */
     padding: 0 20px;
 }
 
@@ -65,7 +66,7 @@ a {
     font-size: 36px;
     font-weight: 700;
     color: #3b2f88;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .page-subtitle {
@@ -75,7 +76,7 @@ a {
 }
 
 /* --------------------------------------------------
-   HERO SECTION
+   HERO SECTION (HOME PAGE)
 -------------------------------------------------- */
 .hero-section {
     padding: 80px 40px;
@@ -87,10 +88,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px; /* FIX: Prevents text/image collisions */
 }
 
 .hero-text {
     width: 55%;
+    min-width: 280px;
 }
 
 .hero-name {
@@ -112,7 +115,7 @@ a {
 
 .hero-description {
     margin-bottom: 20px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .hero-links {
@@ -134,7 +137,6 @@ a {
     background: #ddd0ff;
 }
 
-/* HERO IMAGE */
 .hero-image img {
     width: 330px;
     height: 330px;
@@ -173,9 +175,9 @@ a {
 }
 
 .project-card p {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #4b3f72;
-    line-height: 1.5;
+    line-height: 1.55;
 }
 
 .tech-stack {
@@ -216,7 +218,6 @@ a {
 
 .section-title {
     font-size: 32px;
-    color: #2c2340;
     margin-bottom: 10px;
 }
 
@@ -249,11 +250,9 @@ a {
 .contact-card p,
 .contact-card a {
     font-size: 15px;
-    color: #2c2340;
 }
 
 .contact-icon {
-    display: block;
     font-size: 26px;
     margin-bottom: 10px;
 }
@@ -280,12 +279,13 @@ a {
     background: #5144b4;
 }
 
-/* ===================== EXPERIENCE PAGE ===================== */
-
+/* --------------------------------------------------
+   EXPERIENCE PAGE
+-------------------------------------------------- */
 .xp-card {
-    background: #ffffff;
-    padding: 22px 25px;
-    margin-bottom: 25px;
+    background: #fff;
+    padding: 24px 26px;
+    margin-bottom: 28px;
     border-radius: 12px;
     border-left: 6px solid #8d78ea;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -294,27 +294,23 @@ a {
 .xp-role {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 6px;
-    color: #2c2340;
+    margin-bottom: 8px;
 }
 
 .xp-meta {
     font-size: 14px;
     color: #6d5fae;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .xp-list {
-    margin: 0;
     padding-left: 20px;
-    color: #3f356b;
-    line-height: 1.55;
+    line-height: 1.6;
 }
 
 .xp-list li {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
-
 
 /* --------------------------------------------------
    RESPONSIVE
