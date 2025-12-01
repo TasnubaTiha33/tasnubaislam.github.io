@@ -3,101 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience | Tasnuba Islam</title>
-
+    <title>Experience – Tasnuba Islam</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<header class="navbar">
+<nav class="navbar">
     <div class="nav-left">
-        <a href="index.html" class="logo">Tasnuba Islam</a>
+        <a class="logo" href="index.html">Tasnuba Islam</a>
     </div>
-    <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="experience.html" class="active">Experience</a>
-        <a href="research.html">Research</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
-        <a href="cv.pdf" class="cv-button">CV</a>
-    </nav>
-</header>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="experience.html">Experience</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-<div class="page-container">
+<!-- PAGE WRAPPER -->
+<div class="page-wrapper">
 
-    <!-- LEFT SIDEBAR -->
-    <aside class="sidebar">
-        <img src="images/Tasnuba.jpg" class="profile-photo" alt="Profile Photo">
+    <h2 class="page-title">Experience</h2>
+    <p class="page-subtitle">Research • Teaching • Industry</p>
 
-        <h2 class="side-name">Tasnuba Islam</h2>
-        <p class="side-role">AI • Clinical Data • Medical Imaging Researcher</p>
+    <!-- ======================== BLOCK 1 ======================== -->
+    <div class="xp-card">
+        <h3 class="xp-role">Research Intern — Duke University</h3>
+        <p class="xp-meta">Jul 2025 – Present • Remote</p>
 
-        <div class="side-info">
-            <p>📍 Dhaka, Bangladesh</p>
-            <p>📧 tasnubatiha12@gmail.com</p>
-        </div>
+        <ul class="xp-list">
+            <li>Working under the supervision of <strong>Dr. Rishi Kamaleswaran</strong>.</li>
+            <li>Research on causal inference, target trial emulation, clinical AI validation, and structured EHR pipelines.</li>
+            <li>Developing synthetic EHR generation models (ehrMGAN) and temporal patient-hour datasets.</li>
+        </ul>
+    </div>
 
-        <div class="side-links">
-            <a href="https://www.linkedin.com/in/tasnubaislam" target="_blank">LinkedIn</a>
-            <a href="https://github.com/TasnubaTiha33" target="_blank">GitHub</a>
-            <a href="https://orcid.org/0009-0000-6160-1430" target="_blank">ORCID</a>
-            <a href="https://www.researchgate.net/profile/Tasnuba-Tiha?ev=hdr_xprf" target="_blank">ResearchGate</a>
-        </div>
-    </aside>
+    <!-- ======================== BLOCK 2 ======================== -->
+    <div class="xp-card">
+        <h3 class="xp-role">Undergraduate Teaching Assistant — North South University</h3>
+        <p class="xp-meta">Jan 2025 – Aug 2025 • 8 months</p>
 
-    <!-- MAIN CONTENT -->
-    <main class="content">
+        <ul class="xp-list">
+            <li>Assisted courses in Electronic Circuits and Engineering Economics.</li>
+            <li>Helped students understand core computational and engineering concepts.</li>
+            <li>Guided students in problem-solving, lab tasks, and project-based learning.</li>
+        </ul>
+    </div>
 
-        <h1 class="section-title">Experience</h1>
+    <!-- ======================== BLOCK 3 ======================== -->
+    <div class="xp-card">
+        <h3 class="xp-role">Undergraduate Teaching Assistant — North South University</h3>
+        <p class="xp-meta">Jan 2024 – Dec 2024 • 1 year</p>
 
+        <ul class="xp-list">
+            <li>Assisted courses in Calculus and Probability & Statistics.</li>
+            <li>Supported 120+ students with academic guidance and problem-solving.</li>
+        </ul>
+    </div>
 
-        <!-- EXPERIENCE BLOCK -->
-        <section class="exp-card">
-            <h2>Research Intern <span>— Duke University</span></h2>
-            <p class="exp-date">Jul 2025 – Present · Remote</p>
-            <p class="exp-desc">
-                Working under the supervision of <strong>Dr. Rishi Kamaleswaran</strong>, focusing on causal inference,
-                target trial emulation, and clinical AI system evaluation.
-            </p>
-            <p class="exp-skills">Causal Inference • Target Trial Emulation • Healthcare AI</p>
-        </section>
+    <!-- ======================== BLOCK 4 ======================== -->
+    <div class="xp-card">
+        <h3 class="xp-role">Software Engineer Intern — CloudlyIO</h3>
+        <p class="xp-meta">Mar 2025 – May 2025 • 2 months</p>
 
-
-        <section class="exp-card">
-            <h2>Undergraduate Teaching Assistant <span>— North South University</span></h2>
-            <p class="exp-date">Jan 2025 – Aug 2025 · 8 months</p>
-            <p class="exp-desc">
-                Department of Electrical and Computer Engineering. Assisted courses in Electronic Circuits 
-                and Engineering Economics, helping students understand core computational and engineering concepts.
-            </p>
-            <a href="#" class="contract-btn">📄 ECE_Contract</a>
-        </section>
-
-
-        <section class="exp-card">
-            <h2>Undergraduate Teaching Assistant <span>— North South University</span></h2>
-            <p class="exp-date">Jan 2024 – Dec 2024 · 1 year</p>
-            <p class="exp-desc">
-                Department of Mathematics & Physics. Assisted courses in Calculus and Probability Theory, 
-                supporting over 120 undergraduate students.
-            </p>
-            <a href="#" class="contract-btn">📄 DMP_Contract</a>
-        </section>
-
-
-        <section class="exp-card">
-            <h2>Software Engineer Intern <span>— CloudlyIO</span></h2>
-            <p class="exp-date">Apr 2025 – May 2025 · 2 months</p>
-            <p class="exp-desc">
-                Worked on backend development, ML pipelines, and Git-based team workflows at CloudlyIO.
-            </p>
-            <a href="#" class="contract-btn">📄 Cloudly_Contract</a>
-        </section>
-
-    </main>
+        <ul class="xp-list">
+            <li>Worked on backend development, ML pipelines, and Git-based workflows.</li>
+            <li>Developed internal tools and supported deployment automation tasks.</li>
+        </ul>
+    </div>
 
 </div>
 
