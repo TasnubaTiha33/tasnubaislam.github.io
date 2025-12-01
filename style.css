@@ -73,8 +73,9 @@ footer {
 -------------------------------------------------- */
 .page-wrapper {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
+    margin: 0 auto;              /* centers page but removes vertical offset */
+    padding: 60px 20px 40px;     /* keeps your spacing looking the same */
+    flex: 1;                     /* allows the page to stretch properly */
 }
 
 .page-title {
