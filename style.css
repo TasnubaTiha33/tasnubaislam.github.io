@@ -282,19 +282,28 @@ a {
 /* --------------------------------------------------
    EXPERIENCE PAGE
 -------------------------------------------------- */
+/* ===================== EXPERIENCE PAGE ===================== */
+
 .xp-card {
-    background: #fff;
-    padding: 24px 26px;
-    margin-bottom: 28px;
-    border-radius: 12px;
+    background: #ffffff;
+    padding: 25px 28px;
+    margin-bottom: 25px;
+    border-radius: 14px;
     border-left: 6px solid #8d78ea;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    transition: 0.25s ease;
+}
+
+.xp-card:hover {
+    transform: translateY(-4px);
+    background: #faf7ff;
 }
 
 .xp-role {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 8px;
+    color: #2c2340;
+    margin-bottom: 6px;
 }
 
 .xp-meta {
@@ -306,11 +315,14 @@ a {
 .xp-list {
     padding-left: 20px;
     line-height: 1.6;
+    color: #3f356b;
 }
 
 .xp-list li {
     margin-bottom: 8px;
+    font-size: 15px;
 }
+
 
 /* --------------------------------------------------
    RESPONSIVE
