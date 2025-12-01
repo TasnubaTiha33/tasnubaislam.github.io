@@ -1,136 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasnuba Islam | AI Researcher</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasnuba Islam</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a target="_blank" href="https://drive.google.com/file/d/1ZNPN7J6LHzDxBD-iOCghV5SBQ6GShJkW/view?usp=sharing">CV</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="nav-left">
+        <a class="logo" href="index.html">Tasnuba Islam</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
-    <section id="home" class="layout">
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="images/Tasnuba.jpg" class="profile-pic" alt="Tasnuba Islam">
+    <h1>Tasnuba Islam</h1>
+    <h3>AI • Clinical Data • Medical Imaging Researcher</h3>
 
-        <!-- LEFT PROFILE CARD -->
-        <aside class="profile-card" data-aos="fade-right">
-            <img src="images/Tasnuba.jpg" alt="Profile Photo" class="profile-image"/>
-
-            <h1 class="name">Tasnuba Islam</h1>
-            <p class="tagline">AI • Clinical Data • Medical Imaging Researcher</p>
-
-            <p class="location">Dhaka, Bangladesh</p>
-            <p class="email">📧 tasnubatiha12@gmail.com</p>
-
-            <div class="social-links">
-                <a href="https://linkedin.com/in/tasnubaislam" target="_blank">LinkedIn</a>
-                <a href="https://github.com/TasnubaTiha33" target="_blank">GitHub</a>
-                <a href="https://orcid.org/0009-0000-6160-1430" target="_blank">ORCID</a>
-                <a href="https://www.researchgate.net/profile/Tasnuba-Tiha" target="_blank">ResearchGate</a>
-            </div>
-        </aside>
-
-        <!-- RIGHT CONTENT -->
-        <main class="content">
-
-            <!-- ABOUT SECTION -->
-            <section id="about" class="section" data-aos="fade-up">
-                <h2>About Me</h2>
-                <p>
-                    I am a recent Computer Science graduate from North South University with a strong 
-                    focus on Artificial Intelligence. With 1.5 years of experience as a Teaching Assistant 
-                    and hands-on work across multiple research projects, I have built a solid foundation 
-                    in machine learning, deep learning, and computer vision. My interests include 
-                    healthcare-focused AI, interpretable and efficient vision models, and speech emotion 
-                    recognition for low-resource settings. I am motivated by research that addresses real 
-                    human and clinical challenges. I aim to contribute to reliable, human-centered 
-                    intelligent systems.
-                </p>
-            </section>
-
-            <!-- RESEARCH SECTION -->
-            <section id="research" class="section" data-aos="fade-up">
-                <h2>Research</h2>
-
-                <div class="card">
-                    <h3>LightSeg: Lightweight Fetal Ultrasound Segmentation</h3>
-                    <p>
-                        Developing efficient and interpretable segmentation models using hybrid loss 
-                        design, architectural optimization, and GradCAM++ explainability to enhance the 
-                        reliability of fetal ultrasound imaging.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>AI for Synthetic EHR Generation (Duke University)</h3>
-                    <p>
-                        At Duke University's Kamaleswaran Lab, I contributed to building large-scale clinical
-                        data pipelines and structured temporal representations to support synthetic EHR 
-                        generation. My work included feature engineering workflows, supporting VAE–GAN model 
-                        development, and evaluating clinical fidelity and utility. A co-authored abstract 
-                        from this work has been accepted for presentation.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h3>BanglaSER: Speech Emotion Recognition</h3>
-                    <p>
-                        Designing emotion recognition models using hybrid spectral–temporal features, 
-                        convolutional and recurrent networks, and multimodal fusion approaches to improve 
-                        performance in Bangla, a low-resource language.
-                    </p>
-                </div>
-            </section>
-
-            <!-- PUBLICATIONS -->
-            <section id="publications" class="section" data-aos="fade-up">
-                <h2>Publications</h2>
-                <p>Coming soon.</p>
-            </section>
-
-            <!-- PROJECTS -->
-            <section id="projects" class="section" data-aos="fade-up">
-                <h2>Projects</h2>
-                <p>Project section coming soon.</p>
-            </section>
-
-            <!-- CONTACT -->
-            <section id="contact" class="section" data-aos="fade-up">
-                <h2>Contact</h2>
-                <p>Email: <b>tasnubatiha12@gmail.com</b></p>
-                <p>LinkedIn: www.linkedin.com/in/tasnubaislam</p>
-            </section>
-
-        </main>
-    </section>
-
-    <!-- SCRIPTS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init(); </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="script.js"></script>
+    <div class="hero-buttons">
+        <a href="experience.html" class="btn">About</a>
+        <a href="projects.html" class="btn2">Research</a>
+        <a href="contact.html" class="btn-disabled">Contact</a>
+    </div>
+</section>
 
 </body>
 </html>
