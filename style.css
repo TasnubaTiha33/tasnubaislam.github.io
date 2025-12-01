@@ -1,4 +1,6 @@
-/* Global */
+/* --------------------------------------------------
+   GLOBAL
+-------------------------------------------------- */
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -6,7 +8,13 @@ body {
     color: #2c2340;
 }
 
-/* NAVBAR */
+a {
+    text-decoration: none;
+}
+
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
 .navbar {
     background: #3c3852;
     padding: 15px 40px;
@@ -17,7 +25,6 @@ body {
 
 .logo {
     color: white;
-    text-decoration: none;
     font-size: 22px;
     font-weight: 600;
 }
@@ -29,7 +36,6 @@ body {
 }
 
 .nav-links a {
-    text-decoration: none;
     color: #f2eaff;
     font-size: 15px;
 }
@@ -39,7 +45,31 @@ body {
     color: #d4c7ff;
 }
 
-/* HERO SECTION */
+/* --------------------------------------------------
+   PAGE WRAPPER FOR ALL PAGES
+-------------------------------------------------- */
+.page-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3b2f88;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    color: #6d5fae;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* --------------------------------------------------
+   HERO SECTION (HOME PAGE)
+-------------------------------------------------- */
 .hero-section {
     padding: 80px 40px;
 }
@@ -63,18 +93,18 @@ body {
 }
 
 .hero-title {
-    color: #675ca8;
     font-size: 20px;
+    color: #675ca8;
 }
 
 .hero-subtitle {
-    color: #8a7dd6;
     font-size: 16px;
-    margin-bottom: 20px;
+    color: #8a7dd6;
+    margin-bottom: 18px;
 }
 
 .hero-description {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     line-height: 1.6;
 }
 
@@ -89,19 +119,144 @@ body {
     padding: 10px 16px;
     border-radius: 8px;
     color: #3d2d7a;
-    text-decoration: none;
+    font-weight: 500;
 }
 
 .hero-links a:hover {
     background: #ddd0ff;
 }
 
-/* IMAGE */
+/* HERO IMAGE */
 .hero-image img {
     width: 330px;
     height: 330px;
     object-fit: cover;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     border: 4px solid #d7ccff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* --------------------------------------------------
+   PROJECTS PAGE
+-------------------------------------------------- */
+.projects-grid {
+    display: grid;
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px 22px;
+    border-radius: 12px;
+    border-left: 6px solid #8874e8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project-card h3 {
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+    color: #4b3f72;
+    line-height: 1.5;
+}
+
+.tech-stack {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.github-btn {
+    display: inline-block;
+    background: #ece6ff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    color: #3d2d7a;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.github-btn:hover {
+    background: #ddd0ff;
+}
+
+/* --------------------------------------------------
+   CONTACT PAGE
+-------------------------------------------------- */
+.contact-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #8b78f0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.contact-card span {
+    font-size: 26px;
+}
+
+.contact-card a,
+.contact-card p {
+    margin-top: 6px;
+    font-size: 15px;
+    color: #3d2d7a;
+    display: block;
+}
+
+/* --------------------------------------------------
+   CV PAGE
+-------------------------------------------------- */
+.cv-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cv-download-btn {
+    background: #6154cb;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.cv-download-btn:hover {
+    background: #5144b4;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+@media(max-width: 900px){
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 260px;
+        height: 260px;
+        margin-top: 25px;
+    }
 }
