@@ -1,8 +1,13 @@
 /* --------------------------------------------------
    GLOBAL
 -------------------------------------------------- */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Inter", sans-serif;
     background: #f4f1fc;
     color: #2c2340;
@@ -10,6 +15,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* --------------------------------------------------
@@ -38,6 +44,7 @@ a {
 .nav-links a {
     color: #f2eaff;
     font-size: 15px;
+    font-weight: 500;
 }
 
 .nav-links a.active,
@@ -46,7 +53,7 @@ a {
 }
 
 /* --------------------------------------------------
-   PAGE WRAPPER FOR ALL PAGES
+   PAGE WRAPPER (used for subpages)
 -------------------------------------------------- */
 .page-wrapper {
     max-width: 900px;
@@ -68,7 +75,7 @@ a {
 }
 
 /* --------------------------------------------------
-   HERO SECTION (HOME PAGE)
+   HERO SECTION
 -------------------------------------------------- */
 .hero-section {
     padding: 80px 40px;
@@ -120,6 +127,7 @@ a {
     border-radius: 8px;
     color: #3d2d7a;
     font-weight: 500;
+    transition: 0.2s ease;
 }
 
 .hero-links a:hover {
@@ -142,14 +150,21 @@ a {
 .projects-grid {
     display: grid;
     gap: 25px;
+    margin-top: 30px;
 }
 
 .project-card {
-    background: white;
-    padding: 20px 22px;
+    background: #fff;
+    padding: 22px;
     border-radius: 12px;
     border-left: 6px solid #8874e8;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    background: #faf7ff;
 }
 
 .project-card h3 {
@@ -165,33 +180,38 @@ a {
 
 .tech-stack {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .github-btn {
-    display: inline-block;
     background: #ece6ff;
     padding: 10px 14px;
     border-radius: 8px;
     color: #3d2d7a;
     font-weight: 600;
-    transition: 0.2s;
+    transition: 0.2s ease;
+    display: inline-block;
 }
 
 .github-btn:hover {
     background: #ddd0ff;
 }
 
-/* ===================== CONTACT PAGE ===================== */
-
+/* --------------------------------------------------
+   CONTACT PAGE
+-------------------------------------------------- */
 .contact-section {
     padding: 80px 20px;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .contact-container {
     max-width: 900px;
-    margin: auto;
+    width: 100%;
 }
 
 .section-title {
@@ -208,47 +228,52 @@ a {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
 }
 
 .contact-card {
-    background: white;
-    padding: 18px 20px;
-    border-radius: 10px;
+    background: #faf7ff;
+    padding: 20px;
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     border-left: 5px solid #8d78ea;
+    transition: 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    background: #f1e8ff;
 }
 
 .contact-card p,
 .contact-card a {
     font-size: 15px;
     color: #2c2340;
-    text-decoration: none;
 }
 
 .contact-icon {
     display: block;
     font-size: 26px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 /* --------------------------------------------------
    CV PAGE
 -------------------------------------------------- */
 .cv-container {
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: center;
 }
 
 .cv-download-btn {
     background: #6154cb;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 22px;
     border-radius: 10px;
     font-size: 16px;
     display: inline-block;
-    transition: 0.2s;
+    transition: 0.2s ease;
 }
 
 .cv-download-btn:hover {
@@ -272,5 +297,9 @@ a {
         width: 260px;
         height: 260px;
         margin-top: 25px;
+    }
+
+    .hero-section {
+        padding: 40px 20px;
     }
 }
