@@ -5,114 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasnuba Islam</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
 </head>
 
 <body>
 
 <!-- NAVIGATION -->
-<header>
-    <div class="nav-container">
-        <nav>
-            <a href="index.html" class="logo">Tasnuba Islam</a>
-
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="cv.html" class="nav-link">CV</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+<header class="navbar">
+    <div class="nav-left">
+        <a href="index.html" class="logo">Tasnuba Islam</a>
     </div>
+
+    <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-container">
-        
-        <!-- LEFT SIDE -->
-        <div class="hero-content">
-            <h1>Tasnuba Islam</h1>
 
-            <div class="hero-title">
-                AI • Clinical Data • Medical Imaging Researcher
-            </div>
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <div class="hero-content">
 
-            <div class="hero-affiliation">
-                <i class="fas fa-flask"></i>
-                Research Intern, Kamaleswaran Lab, Duke University
-            </div>
+        <div class="hero-text">
+            <h1 class="hero-name">Tasnuba Islam</h1>
+
+            <p class="hero-title">AI • Clinical Data • Medical Imaging Researcher</p>
+            <p class="hero-subtitle">Research Intern, Kamaleswaran Lab, Duke University</p>
 
             <p class="hero-description">
-                I am a researcher passionate about trustworthy AI for healthcare.  
-                My work focuses on <strong>clinical data pipelines</strong>,  
-                <strong>synthetic EHR generation using GANs</strong>,  
-                and <strong>medical image segmentation</strong> with interpretable deep learning.
-
-                <br><br>
-                I also work on <strong>speech emotion recognition</strong> for Bangla and explore 
-                efficient machine learning methods for real-world clinical challenges.
-
-                <br><br>
-                I value mentorship deeply — guiding and teaching  
-                <strong>400+ students</strong> across engineering and computer science.
+                I am a researcher passionate about trustworthy AI systems for healthcare. 
+                My work focuses on <strong>structured clinical data pipelines</strong>, 
+                <strong>GAN-based synthetic EHR generation</strong>, and 
+                <strong>medical image segmentation</strong> with interpretable deep learning.
             </p>
 
-            <!-- Links -->
-            <div class="hero-links">
-                <a href="mailto:tasnubatiha@gmail.com" class="hero-link">
-                    <i class="fas fa-envelope"></i>Email
-                </a>
-                <a href="https://github.com/TasnubaTiha33" class="hero-link" target="_blank">
-                    <i class="fab fa-github"></i>GitHub
-                </a>
-                <a href="#" class="hero-link" target="_blank">
-                    <i class="fas fa-graduation-cap"></i>Scholar
-                </a>
-                <a href="https://linkedin.com/in/tasnubaislam" class="hero-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>LinkedIn
-                </a>
-            </div>
+            <p class="hero-description">
+                I also work extensively in <strong>speech emotion recognition</strong> for 
+                low-resource languages and have mentored and guided 
+                <strong>400+ students</strong> across computer science and engineering.
+            </p>
 
+            <!-- Social Icons -->
+            <div class="hero-links">
+                <a href="mailto:tasnuba.islam@example.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/TasnubaTiha33"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://scholar.google.com"><i class="ai ai-google-scholar"></i> Scholar</a>
+                <a href="https://linkedin.com/in/TasnubaIslam"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
         </div>
 
-        <!-- RIGHT SIDE -->
-        <div class="profile-section">
-            <img src="images/Tasnuba.jpg" class="profile-image" alt="Tasnuba Islam">
-
-            <div class="profile-stats">
-                <div class="stat-item">
-                    <span class="stat-value">5+</span>
-                    <span class="stat-label">Research Projects</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-value">3+</span>
-                    <span class="stat-label">Manuscripts</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-value">1</span>
-                    <span class="stat-label">TA Year</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-value">1</span>
-                    <span class="stat-label">International Internship</span>
-                </div>
-            </div>
+        <!-- IMAGE -->
+        <div class="hero-image">
+            <img src="images/Tasnuba.jpg" alt="Tasnuba Islam">
         </div>
 
     </div>
 </section>
 
-<!-- MAIN SCRIPT -->
 <script src="script.js"></script>
 
 </body>
