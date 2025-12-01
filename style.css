@@ -1,117 +1,189 @@
-/* Global Styles */
+/* GLOBAL */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9fb;
+    background: #f8f7ff;
     color: #333;
-    scroll-behavior: smooth;
 }
 
-/* HERO SECTION */
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #d9c7ff, #f5ecff, #d4e4ff);
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #dcd1ff;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
+    padding: 0;
+    margin: 0;
 }
 
-.hero h1 {
-    font-size: 3.2rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #2c2c54;
+.navbar ul li {
+    margin: 0 18px;
 }
 
-.hero h2 {
-    font-size: 1.4rem;
-    font-weight: 300;
-    color: #4b4b7d;
-    margin-bottom: 30px;
-}
-
-.hero-buttons .btn {
-    padding: 12px 25px;
-    margin: 0 10px;
-    background: #3a3a6a;
-    color: white;
+.navbar ul li a {
     text-decoration: none;
-    border-radius: 6px;
-    font-size: 1rem;
+    color: #3a2f60;
     font-weight: 500;
+    font-size: 14.5px;
     transition: 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.hero-buttons .btn:hover {
-    background: #262650;
-    transform: translateY(-3px);
+.navbar ul li a:hover {
+    color: #1e163f;
 }
 
-/* SECTIONS */
-.section {
-    max-width: 900px;
-    margin: 70px auto;
+/* LAYOUT: PROFILE LEFT + CONTENT RIGHT */
+.layout {
+    display: flex;
+    max-width: 1200px;
+    margin: 120px auto 50px auto; /* space for navbar */
     padding: 0 20px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+    width: 32%;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: fit-content;
+    text-align: center;
+    position: sticky;
+    top: 100px;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2d2355;
+    margin-bottom: 6px;
+}
+
+.tagline {
+    color: #4b3f78;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.location,
+.email {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    margin-top: 12px;
+}
+
+.social-links a {
+    display: block;
+    text-decoration: none;
+    color: #4b3f78;
+    margin: 6px 0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #2a1d52;
+}
+
+/* RIGHT SIDE CONTENT */
+.content {
+    width: 65%;
+    margin-left: 3%;
+}
+
+.section {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 .section h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #2c2c54;
-    margin-bottom: 30px;
+    color: #2d2355;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .section p {
-    font-size: 1rem;
     line-height: 1.6;
+    font-size: 15px;
     color: #444;
 }
 
 /* RESEARCH CARDS */
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
+    background: #faf9ff;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 5px solid #b9a7ff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
 .card h3 {
     margin-top: 0;
-    color: #3b3b6e;
+    color: #3a2f60;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .card p {
-    margin-bottom: 0;
+    margin: 0;
+    font-size: 14.5px;
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 #contact p {
-    text-align: center;
+    margin: 6px 0;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.4rem;
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
     }
 
-    .hero h2 {
-        font-size: 1.1rem;
+    .profile-card {
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
     }
 
-    .hero-buttons .btn {
-        margin: 5px 0;
-        display: inline-block;
+    .content {
+        width: 100%;
+        margin-left: 0;
     }
 }
-
