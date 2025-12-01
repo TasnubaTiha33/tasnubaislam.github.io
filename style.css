@@ -35,16 +35,19 @@ body {
 .hero-buttons .btn {
     padding: 12px 25px;
     margin: 0 10px;
-    background: #4b4b7d;
+    background: #3a3a6a;
     color: white;
     text-decoration: none;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 500;
     transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .hero-buttons .btn:hover {
-    background: #2c2c54;
+    background: #262650;
+    transform: translateY(-3px);
 }
 
 /* SECTIONS */
