@@ -1,1 +1,114 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9fb;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #d9c7ff, #f5ecff, #d4e4ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2c2c54;
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #4b4b7d;
+    margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
+    padding: 12px 25px;
+    margin: 0 10px;
+    background: #4b4b7d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background: #2c2c54;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c2c54;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* RESEARCH CARDS */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #3b3b6e;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+/* CONTACT */
+#contact p {
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero h2 {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons .btn {
+        margin: 5px 0;
+        display: inline-block;
+    }
+}
 
