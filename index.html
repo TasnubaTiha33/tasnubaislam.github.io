@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasnuba Islam</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasnuba Islam – Academic Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <div class="nav-left">
-        <a class="logo" href="index.html">Tasnuba Islam</a>
+<!-- HEADER / NAVIGATION -->
+<header>
+  <div class="nav-container">
+    <nav>
+      <a href="index.html" class="logo">Tasnuba Islam</a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="experience.html" class="nav-link">Experience</a></li>
+        <li><a href="publications.html" class="nav-link">Publications</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="cv.html" class="nav-link">CV</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-content">
+      <h1>Tasnuba Islam</h1>
+      <div class="hero-title">AI • Clinical Data • Medical Imaging Researcher</div>
+
+      <div class="hero-affiliation">
+        <i class="fas fa-university"></i>
+        Research Intern, Kamaleswaran Lab, Duke University
+      </div>
+
+      <p class="hero-description">
+        I am a researcher passionate about developing trustworthy AI systems for healthcare.  
+        My work focuses on <strong>structured clinical data pipelines</strong>,  
+        <strong>GAN-based synthetic EHR generation</strong>, and  
+        <strong>medical image segmentation</strong> with interpretable deep learning.
+
+        <br><br>
+        I have also worked extensively in <strong>speech emotion recognition</strong> for low-resource languages
+        and maintain a strong interest in designing efficient, reliable, and human-centered machine learning systems.
+
+        <br><br>
+        I believe in mentorship and educational impact — with experience teaching and guiding  
+        <strong>400+ students</strong> across engineering and computer science.
+      </p>
+
+      <!-- LINKS -->
+      <div class="hero-links">
+        <a href="mailto:tasnuba33@gmail.com" class="hero-link"><i class="fas fa-envelope"></i>Email</a>
+        <a href="https://github.com/TasnubaTiha33" target="_blank" class="hero-link"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://scholar.google.com" target="_blank" class="hero-link"><i class="fas fa-graduation-cap"></i>Scholar</a>
+        <a href="https://linkedin.com/in/tasnuba-islam" target="_blank" class="hero-link"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      </div>
     </div>
-    <ul class="nav-links">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
 
-<!-- MAIN BODY -->
-<section class="hero-row">
+    <!-- RIGHT PROFILE SECTION -->
+    <div class="profile-section">
+      <img src="images/Tasnuba.jpg" alt="Tasnuba Islam" class="profile-image">
 
-    <!-- LEFT SIDE CONTENT -->
-    <div class="hero-text">
-        <h1 class="hero-name">Tasnuba Islam</h1>
-        <h3 class="hero-role">AI • Clinical Data • Medical Imaging Researcher</h3>
-
-        <p class="hero-description">
-            I am a researcher focused on AI for healthcare, clinical machine learning, 
-            medical image analysis, and multimodal modeling. My background spans synthetic EHR generation 
-            (Duke University), fetal ultrasound segmentation (LightSeg), and speech-based emotion intelligence 
-            for Bangla. I aim to build interpretable and reliable AI systems that improve clinical decision-making 
-            and support real-world medical workflows.
-        </p>
-
-        <!-- Social icons -->
-        <div class="social-icons">
-            <a href="mailto:tasnubatiha12@gmail.com">📧 Email</a>
-            <a href="https://www.linkedin.com/in/tasnubaislam">🔗 LinkedIn</a>
-            <a href="https://github.com/TasnubaTiha33">💻 GitHub</a>
-            <a href="https://orcid.org/0009-0000-6160-1430">🟢 ORCID</a>
-            <a href="https://www.researchgate.net/profile/Tasnuba-Tiha">📘 ResearchGate</a>
+      <div class="profile-stats">
+        <div class="stat-item">
+          <span class="stat-value">5+</span>
+          <span class="stat-label">Research Projects</span>
         </div>
 
-        <!-- METRICS -->
-        <div class="metrics-row">
-            <div class="metric-card">
-                <h2>6+</h2><p>Months Research Experience</p>
-            </div>
-            <div class="metric-card">
-                <h2>3+</h2><p>Major Research Projects</p>
-            </div>
-            <div class="metric-card">
-                <h2>1</h2><p>Accepted Abstract</p>
-            </div>
+        <div class="stat-item">
+          <span class="stat-value">3+</span>
+          <span class="stat-label">Ongoing Manuscripts</span>
         </div>
+
+        <div class="stat-item">
+          <span class="stat-value">1</span>
+          <span class="stat-label">TA Year</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-value">1</span>
+          <span class="stat-label">Intl. Internship</span>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-value">400+</span>
+          <span class="stat-label">Students Mentored</span>
+        </div>
+      </div>
     </div>
 
-    <!-- RIGHT SIDE PROFILE PHOTO -->
-    <div class="hero-photo">
-        <img src="images/Tasnuba.jpg" alt="Profile Photo">
-    </div>
-
+  </div>
 </section>
 
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Tasnuba Islam. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
