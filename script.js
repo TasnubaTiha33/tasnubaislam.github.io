@@ -1,25 +1,44 @@
-// GSAP Intro Animation for Hero Section
-gsap.from(".hero h1", {
-    duration: 1.2,
+// Smooth GSAP Animations for Home Layout
+
+// Profile card slide-in
+gsap.from(".profile-card", {
+    duration: 1.1,
     opacity: 0,
-    y: 30,
+    x: -40,
     ease: "power3.out"
 });
 
-gsap.from(".hero h2", {
-    duration: 1.4,
+// Right content fade + lift
+gsap.from(".content", {
+    duration: 1.1,
     opacity: 0,
     y: 20,
     delay: 0.2,
     ease: "power3.out"
 });
 
-gsap.from(".hero-buttons .btn", {
+// Navbar fade-in
+gsap.from(".navbar", {
     duration: 1,
     opacity: 0,
-    y: 15,
-    stagger: 0.15,
-    delay: 0.4,
+    y: -20,
     ease: "power2.out"
 });
 
+// Section animations on scroll (AOS handles most)
+AOS.init({
+    duration: 800,
+    easing: "ease-out-quart"
+});
+
+// Smooth scroll for nav items
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if (this.getAttribute('href').startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
