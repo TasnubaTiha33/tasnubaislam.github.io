@@ -9,6 +9,7 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
     <div class="nav-left">
         <a class="logo" href="index.html">Tasnuba Islam</a>
@@ -23,31 +24,77 @@
     </ul>
 </nav>
 
-<section class="content">
-    <h2>Projects</h2>
+<!-- PROJECTS WRAPPER -->
+<section class="page-wrapper">
 
-    <!-- PROJECT CARD 1 -->
-    <div class="project-card">
-        <h3>LightSeg – Lightweight Fetal Ultrasound Segmentation</h3>
-        <p>Teacher–student distillation, DLCE loss, GradCAM++ explainability.</p>
-        <a href="https://github.com/TasnubaTiha33/LightSeg" class="proj-link">GitHub Repo</a>
+    <h2 class="page-title">Projects</h2>
+    <p class="page-subtitle">Selected research and engineering projects.</p>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <h3>LightSeg – Fetal Head Segmentation</h3>
+            <p>Lightweight fetal ultrasound segmentation with DLCE hybrid loss, teacher–student distillation, and GradCAM++ explainability.</p>
+            <div class="tech-stack">
+                <span>🧠</span><span>📈</span><span>🖼️</span>
+            </div>
+            <a class="github-btn" href="https://github.com/TasnubaTiha33/Lightseg-A-Fetal-Head-Segmentation-Approach" target="_blank">🔗 GitHub</a>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <h3>BanglaSER – Speech Emotion Recognition</h3>
+            <p>Hybrid MFCC + Log-Mel + Chroma + Cochleagram feature fusion with CNN-Transformer and CNN-GRU models for Bangla emotion detection.</p>
+            <div class="tech-stack">
+                <span>🎵</span><span>🔊</span><span>🤖</span>
+            </div>
+            <a class="github-btn" href="https://github.com/TasnubaTiha33/BanglaSER-FeatureFusion" target="_blank">🔗 GitHub</a>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <h3>ehrMGAN for Synthetic EHR Generation (Duke)</h3>
+            <p>Adapted ehrMGAN for pediatric sepsis, built structured clinical datasets, and automated patient-hour temporal pipelines.</p>
+            <div class="tech-stack">
+                <span>🏥</span><span>📊</span><span>🧬</span>
+            </div>
+            <a class="github-btn" href="https://github.com/TasnubaTiha33/ehrMGAN_Sepsis_DUKE" target="_blank">🔗 GitHub</a>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card">
+            <h3>Tesla Stock Forecasting</h3>
+            <p>Time-series forecasting using LSTM and GRU to model Tesla stock movement and future trend behavior.</p>
+            <div class="tech-stack">
+                <span>📉</span><span>📈</span><span>⌛</span>
+            </div>
+            <a class="github-btn" href="https://github.com/TasnubaTiha33/Tesla-S" target="_blank">🔗 GitHub</a>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card">
+            <h3>Student Performance Prediction</h3>
+            <p>Academic risk prediction using ML classifiers to identify students at risk of failure and factors affecting performance.</p>
+            <div class="tech-stack">
+                <span>🎓</span><span>📊</span><span>🤖</span>
+            </div>
+            <a class="github-btn" href="https://github.com/TasnubaTiha33/Predicting-Student-Success-and-Failure" target="_blank">🔗 GitHub</a>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card">
+            <h3>BookVault – Web App (CSE327)</h3>
+            <p>Full-stack book sharing and management platform using Flask, SQLAlchemy, and clean MVC-based design.</p>
+            <div class="tech-stack">
+                <span>🌐</span><span>🐍</span><span>🗄️</span>
+            </div>
+            <a class="github-btn" href="https://github.com/TasnubaTiha33/BookVault_CSE327" target="_blank">🔗 GitHub</a>
+        </div>
+
     </div>
-
-    <!-- PROJECT CARD 2 -->
-    <div class="project-card">
-        <h3>AI for Synthetic EHR Generation (Duke University)</h3>
-        <p>ehrMGAN adaptation, clinical data pipelines, structured temporal datasets.</p>
-        <a href="https://github.com/TasnubaTiha33/EHR-FeatureSynthesizerPipeline-FSP" class="proj-link">GitHub Repo</a>
-    </div>
-
-    <!-- PROJECT CARD 3 -->
-    <div class="project-card">
-        <h3>Bangla Speech Emotion Recognition</h3>
-        <p>Hybrid MFCC + Log-Mel + Chroma + Cochleagram features. CNN–Transformer experiments.</p>
-        <a href="https://github.com/TasnubaTiha33/BanglaSER" class="proj-link">GitHub Repo</a>
-    </div>
-
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
