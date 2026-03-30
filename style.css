@@ -19,7 +19,12 @@ a {
     color: inherit;
 }
 
-/* Make footer stick to bottom on short pages */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make footer stick to bottom */
 html, body {
     height: 100%;
 }
@@ -68,14 +73,15 @@ footer {
     color: #d4c7ff;
 }
 
+
 /* --------------------------------------------------
    PAGE WRAPPER
 -------------------------------------------------- */
 .page-wrapper {
     max-width: 900px;
-    margin: 0 auto;              /* centers page but removes vertical offset */
-    padding: 60px 20px 40px;     /* keeps your spacing looking the same */
-    flex: 1;                     /* allows the page to stretch properly */
+    margin: 0 auto;
+    padding: 60px 20px 40px;
+    flex: 1;
 }
 
 .page-title {
@@ -90,6 +96,7 @@ footer {
     font-size: 16px;
     margin-bottom: 30px;
 }
+
 
 /* --------------------------------------------------
    HERO SECTION
@@ -126,11 +133,11 @@ footer {
 .hero-subtitle {
     font-size: 16px;
     color: #8a7dd6;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 }
 
 .hero-description {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     line-height: 1.7;
 }
 
@@ -138,6 +145,7 @@ footer {
     margin-top: 20px;
     display: flex;
     gap: 14px;
+    flex-wrap: wrap;
 }
 
 .hero-links a {
@@ -155,16 +163,14 @@ footer {
 
 .hero-image img {
     width: 330px;
-    height: auto;
-    max-width: 100%;
-    display: block;
     border-radius: 12px;
     border: 4px solid #d7ccff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+
 /* --------------------------------------------------
-   PROJECTS PAGE
+   PROJECTS
 -------------------------------------------------- */
 .projects-grid {
     display: grid;
@@ -194,54 +200,33 @@ footer {
 .project-card p {
     margin-bottom: 12px;
     color: #4b3f72;
-    line-height: 1.55;
-}
-
-.tech-stack {
-    font-size: 20px;
-    margin-bottom: 12px;
 }
 
 .github-btn {
     background: #ece6ff;
     padding: 10px 14px;
     border-radius: 8px;
-    color: #3d2d7a;
     font-weight: 600;
-    transition: 0.2s ease;
-    display: inline-block;
 }
 
 .github-btn:hover {
     background: #ddd0ff;
 }
 
+
 /* --------------------------------------------------
-   CONTACT PAGE
+   CONTACT
 -------------------------------------------------- */
 .contact-section {
     padding: 80px 20px;
-    min-height: calc(100vh - 120px);
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .contact-container {
     max-width: 900px;
     width: 100%;
-}
-
-.section-title {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    font-size: 16px;
-    color: #5d527d;
-    margin-bottom: 40px;
+    text-align: center;
 }
 
 .contact-grid {
@@ -251,77 +236,41 @@ footer {
 }
 
 .contact-card {
-    background: #ffffff;
-    padding: 22px 18px;
+    background: #fff;
+    padding: 22px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-left: 5px solid #8d78ea;
-    transition: 0.25s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-card:hover {
-    transform: translateY(-4px);
-    background: #f6f0ff;
-}
-
-.icon-img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.contact-icon {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.contact-card p,
-.contact-card a {
-    font-size: 15px;
-    margin-top: 4px;
 }
 
 
 /* --------------------------------------------------
-   EXPERIENCE PAGE
+   EXPERIENCE
 -------------------------------------------------- */
 .xp-card {
     background: #fff;
-    padding: 24px 26px;
+    padding: 24px;
     margin-bottom: 28px;
     border-radius: 12px;
     border-left: 6px solid #8d78ea;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .xp-role {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 8px;
 }
 
 .xp-meta {
     font-size: 14px;
     color: #6d5fae;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .xp-list {
     padding-left: 20px;
-    line-height: 1.6;
-}
-
-.xp-list li {
-    margin-bottom: 8px;
 }
 
 
 /* --------------------------------------------------
-   NEWS & UPDATES SECTION (NEW)
+   NEWS
 -------------------------------------------------- */
 .news-section {
     max-width: 900px;
@@ -331,17 +280,12 @@ footer {
 
 .news-title {
     font-size: 36px;
-    font-weight: 700;
-    color: #3b2f88;
     text-align: center;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .news-subtitle {
     text-align: center;
-    color: #6d5fae;
-    font-size: 15px;
-    font-style: italic;
     margin-bottom: 40px;
 }
 
@@ -355,63 +299,13 @@ footer {
 .news-date {
     width: 70px;
     text-align: center;
-    font-weight: 600;
-    color: #3b2f88;
-}
-
-.news-date .month {
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-
-.news-date .day {
-    font-size: 26px;
-    font-weight: 700;
-}
-
-.news-date .year {
-    font-size: 12px;
-    margin-top: -5px;
-    color: #7a6db8;
 }
 
 .news-content {
-    background: #ffffff;
-    padding: 18px 22px;
+    background: #fff;
+    padding: 18px;
     border-radius: 10px;
     border-left: 5px solid #8d78ea;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-    width: 100%;
-    transition: 0.2s ease;
-}
-
-.news-content:hover {
-    background: #faf7ff;
-    transform: translateY(-3px);
-}
-
-.news-content h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: #2c2340;
-}
-
-.news-content p {
-    font-size: 14.5px;
-    color: #4b3f72;
-    line-height: 1.55;
-}
-
-.news-tag {
-    display: inline-block;
-    background: #e8e3ff;
-    color: #3b2f88;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 8px;
 }
 
 
@@ -422,20 +316,31 @@ footer {
     background: #3c3852;
     color: #f2eaff;
     text-align: center;
-    padding: 18px 0;
-    font-size: 14px;
-    margin-top: 50px;
-}
-
-.footer p {
-    opacity: 0.9;
+    padding: 18px;
 }
 
 
 /* --------------------------------------------------
-   RESPONSIVE
+   MOBILE (FIXED)
 -------------------------------------------------- */
-@media(max-width: 900px){
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        padding: 40px 20px;
+    }
+
     .hero-content {
         flex-direction: column;
         text-align: center;
@@ -445,22 +350,39 @@ footer {
         width: 100%;
     }
 
-    .hero-image img {
-        width: 260px;
-        height: 260px;
-        margin-top: 25px;
+    .hero-name {
+        font-size: 32px;
     }
 
-    .hero-section {
-        padding: 40px 20px;
+    .hero-title {
+        font-size: 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        margin-top: 20px;
     }
 
     .news-item {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .news-date {
-        width: 100%;
+        width: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .page-wrapper {
+        padding: 40px 15px;
     }
 }
